@@ -22,13 +22,12 @@ export default function createRoutes(store) {
         name: 'home',
         getComponent(nextState, cb) {
             const importModules = Promise.all([
-                import('containers/Home'),
+                import('containers/public/Home'),
             ]);
 
             const renderRoute = loadModule(cb);
 
             importModules.then(([component]) => {
-                console.log('hey');
                 renderRoute(component);
             });
 
@@ -40,7 +39,24 @@ export default function createRoutes(store) {
         name: 'login',
         getComponent(nextState, cb) {
             const importModules = Promise.all([
-                import('containers/Login'),
+                import('containers/public/Login'),
+            ]);
+
+            const renderRoute = loadModule(cb);
+
+            importModules.then(([component]) => {
+                renderRoute(component);
+            });
+
+            importModules.catch(errorLoading);
+        },
+    },
+    {
+        path: '/register',
+        name: 'register',
+        getComponent(nextState, cb) {
+            const importModules = Promise.all([
+                import('containers/public/Register'),
             ]);
 
             const renderRoute = loadModule(cb);
@@ -53,10 +69,95 @@ export default function createRoutes(store) {
         },
     }, 
     {
+        path: '/locator',
+        name: 'bus-locator',
+        getComponent(nextState, cb) {
+            const importModules = Promise.all([
+                import('containers/private/BusLocator'),
+            ]);
+
+            const renderRoute = loadModule(cb);
+
+            importModules.then(([component]) => {
+                renderRoute(component);
+            });
+
+            importModules.catch(errorLoading);
+        },
+    },
+    {
+        path: '/documents',
+        name: 'school-documents',
+        getComponent(nextState, cb) {
+            const importModules = Promise.all([
+                import('containers/private/SchoolDocuments'),
+            ]);
+
+            const renderRoute = loadModule(cb);
+
+            importModules.then(([component]) => {
+                renderRoute(component);
+            });
+
+            importModules.catch(errorLoading);
+        },
+    },
+    {
+        path: '/upload',
+        name: 'upload-document',
+        getComponent(nextState, cb) {
+            const importModules = Promise.all([
+                import('containers/private/UploadDocument'),
+            ]);
+
+            const renderRoute = loadModule(cb);
+
+            importModules.then(([component]) => {
+                renderRoute(component);
+            });
+
+            importModules.catch(errorLoading);
+        },
+    },
+    {
+        path: '/messages',
+        name: 'messages',
+        getComponent(nextState, cb) {
+            const importModules = Promise.all([
+                import('containers/private/Messages'),
+            ]);
+
+            const renderRoute = loadModule(cb);
+
+            importModules.then(([component]) => {
+                renderRoute(component);
+            });
+
+            importModules.catch(errorLoading);
+        },
+    },
+    {
+        path: '/new',
+        name: 'new-message',
+        getComponent(nextState, cb) {
+            const importModules = Promise.all([
+                import('containers/private/NewMessage'),
+            ]);
+
+            const renderRoute = loadModule(cb);
+
+            importModules.then(([component]) => {
+                renderRoute(component);
+            });
+
+            importModules.catch(errorLoading);
+        },
+    },
+    {
         path: '*',
         name: 'notfound',
         getComponent(nextState, cb) {
-            import('containers/NotFound')
+            import('containers/public/NotFound')
             .then(loadModule(cb))
             .catch(errorLoading);
         },
