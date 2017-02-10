@@ -19,7 +19,6 @@ export default function createRoutes(store) {
     return [
     {
         path: '/',
-        name: 'home',
         getComponent(nextState, cb) {
             const importModules = Promise.all([
                 import('containers/public/Home'),
@@ -36,7 +35,6 @@ export default function createRoutes(store) {
     }, 
     {
         path: '/login',
-        name: 'login',
         getComponent(nextState, cb) {
             const importModules = Promise.all([
                 import('containers/public/Login'),
@@ -53,7 +51,6 @@ export default function createRoutes(store) {
     },
     {
         path: '/register',
-        name: 'register',
         getComponent(nextState, cb) {
             const importModules = Promise.all([
                 import('containers/public/Register'),
@@ -70,7 +67,6 @@ export default function createRoutes(store) {
     }, 
     {
         path: '/locator',
-        name: 'bus-locator',
         getComponent(nextState, cb) {
             const importModules = Promise.all([
                 import('containers/private/BusLocator'),
@@ -87,7 +83,6 @@ export default function createRoutes(store) {
     },
     {
         path: '/documents',
-        name: 'school-documents',
         getComponent(nextState, cb) {
             const importModules = Promise.all([
                 import('containers/private/SchoolDocuments'),
@@ -104,7 +99,6 @@ export default function createRoutes(store) {
     },
     {
         path: '/upload',
-        name: 'upload-document',
         getComponent(nextState, cb) {
             const importModules = Promise.all([
                 import('containers/private/UploadDocument'),
@@ -121,7 +115,6 @@ export default function createRoutes(store) {
     },
     {
         path: '/messages',
-        name: 'messages',
         getComponent(nextState, cb) {
             const importModules = Promise.all([
                 import('containers/private/Messages'),
@@ -138,7 +131,6 @@ export default function createRoutes(store) {
     },
     {
         path: '/new',
-        name: 'new-message',
         getComponent(nextState, cb) {
             const importModules = Promise.all([
                 import('containers/private/NewMessage'),

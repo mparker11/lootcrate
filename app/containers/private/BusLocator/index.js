@@ -8,7 +8,6 @@ export default class BusLocator extends React.Component {
   	render() {
         return (
             <article>
-                <H1>BUS LOCATOR PAGE</H1>
             </article>
         );
     }

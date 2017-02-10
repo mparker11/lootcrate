@@ -8,7 +8,6 @@ export default class NewMessage extends React.Component {
   	render() {
         return (
             <article>
-                <H1>NEW MESSAGE PAGE</H1>
             </article>
         );
     }

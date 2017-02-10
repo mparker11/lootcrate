@@ -8,7 +8,6 @@ export default class UploadDocument extends React.Component {
   	render() {
         return (
             <article>
-                <H1>UPLOAD DOCUMENT PAGE</H1>
             </article>
         );
     }

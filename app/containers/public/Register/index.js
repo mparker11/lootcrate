@@ -8,7 +8,6 @@ export default class Register extends React.Component {
   	render() {
         return (
             <article>
-                <H1>REGISTER PAGE</H1>
             </article>
         );
     }

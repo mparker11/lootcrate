@@ -8,7 +8,6 @@ export default class SchoolDocuments extends React.Component {
   	render() {
         return (
             <article>
-                <H1>DOCUMENTS PAGE</H1>
             </article>
         );
     }

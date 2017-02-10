@@ -15,6 +15,9 @@ import Footer from '../../components/Footer';
 import withProgressBar from '../../components/ProgressBar';
 
 const AppWrapper = styled.div`
+  	width: 100%;
+`;
+const ContentWrapper = styled.div`
   	max-width: calc(768px + 16px * 2);
   	margin: 0 auto;
   	display: flex;
@@ -34,8 +37,10 @@ export function App(props) {
 	        	]}
 	      	/>
 	      	<Header />
-	      		{React.Children.toArray(props.children)}
-	      	<Footer />
+            <ContentWrapper>
+      		    {React.Children.toArray(props.children)}
+                <Footer />
+            </ContentWrapper>
 	    </AppWrapper>
   	);
 }
