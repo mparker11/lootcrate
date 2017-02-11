@@ -30,7 +30,7 @@ export default class Login extends React.Component {
                 <form onSubmit={ this.handleLogin }>
                     <TextBox label="Email Address" type="email" onChange={ this.handleFieldChange.bind(this, 'email') }/>
                     <TextBox label="Password" type="password" onChange={ this.handleFieldChange.bind(this, 'password') } />
-                    <SubmitButton text="Login" />
+                    <SubmitButton text="Log in" />
                 </form>
                 <div className="divider"><div className="mask"><div className="inner"></div></div></div>
                 <p>
