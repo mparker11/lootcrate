@@ -14,7 +14,7 @@ const ContentWrapper = styled.div`
   	margin: 0 auto;
   	display: flex;
   	min-height: 100%;
-  	padding: 20px 16px;
+  	padding: 20px 16px 0;
   	flex-direction: column;
 `;
 

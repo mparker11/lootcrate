@@ -10,7 +10,7 @@ export default class TextBox extends React.Component {
         return (
             <Label>
 				{ this.props.label }
-				<input type={ this.props.type } />
+				<input type={ this.props.type } onChange={ this.props.onChange } />
 			</Label>
         );
     }

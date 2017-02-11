@@ -42,6 +42,7 @@ injectGlobal`
     body {
         font-family: 'Teen', sans-serif;
         color: ${ Defaults.colors.black };
+        overflow-x: hidden;
     }
     body.fontLoaded {
         font-family: 'teen', sans-serif;
@@ -52,4 +53,10 @@ injectGlobal`
         min-height: 100%;
         min-width: 100%;
     } 
+    p, label, input, a {
+        /*font-family: 'Open Sans', sans-serif;*/
+    }
+    p {
+        line-height: 20px;
+    }
 `;

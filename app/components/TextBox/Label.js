@@ -11,6 +11,7 @@ export default styled.label`
 		border: 1px solid ${ Defaults.colors.gray };
 		border-radius: 3px;
 		margin-bottom: 10px;
+		transition: outline .25s ease;
 		
 		&:active, &:focus {
 			outline: ${ Defaults.colors.blue } auto 5px;
