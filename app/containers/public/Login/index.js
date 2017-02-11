@@ -32,7 +32,7 @@ export default class Login extends React.Component {
                     <TextBox label="Password" type="password" onChange={ this.handleFieldChange.bind(this, 'password') } />
                     <SubmitButton text="Log in" />
                 </form>
-                <div className="divider"><div className="mask"><div className="inner"></div></div></div>
+                <div className="divider"><div className="mask"></div></div>
                 <p>
                     If you are here for the first time and need to request access, 
                     please call (432) 138-3192. If you have completed this step, please 
