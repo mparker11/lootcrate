@@ -1,12 +1,16 @@
 import React from 'react';
 
-import H1 from 'components/H1';
+import LoginWrap from './Login';
+import TextBox from 'components/Textbox';
 
 export default class Login extends React.Component {
   	render() {
         return (
-            <article>
-            </article>
+            <LoginWrap>
+                <p>Please enter your credentials below.</p>
+                <TextBox label="Email Address" type="email" />
+                <TextBox label="Password" type="password" />
+            </LoginWrap>
         );
     }
 }

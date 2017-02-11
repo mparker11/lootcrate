@@ -1,11 +1,3 @@
-/**
- *
- * App
- *
- * This component is the skeleton around the actual pages, and should only
- * contain code that should be seen on all pages. (e.g. navigation bar)
- */
-
 import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
@@ -22,7 +14,7 @@ const ContentWrapper = styled.div`
   	margin: 0 auto;
   	display: flex;
   	min-height: 100%;
-  	padding: 0 16px;
+  	padding: 20px 16px;
   	flex-direction: column;
 `;
 
@@ -30,10 +22,10 @@ export function App(props) {
   	return (
 	    <AppWrapper>
 	      	<Helmet
-	        	titleTemplate="%s - React.js Boilerplate"
-	        	defaultTitle="React.js Boilerplate"
+	        	titleTemplate="%s - Bus 21"
+	        	defaultTitle="Bus 21"
 	        	meta={[
-	          		{ name: 'description', content: 'A React.js Boilerplate application' },
+	          		{ name: 'description', content: 'An application that closes the gap between students, parents and administrators.' },
 	        	]}
 	      	/>
 	      	<Header />
